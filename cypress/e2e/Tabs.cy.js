@@ -2,15 +2,17 @@ describe("New Tabes is Handel ", ()=>{
 
     //Approch 1
     
-    it.skip("Child Tabes is Hundle Apporch 1" , ()=>{
+    it.only("Child Tabes is Hundle Apporch 1" , ()=>{
+       
         cy.visit("https://the-internet.herokuapp.com/windows") //Parent Tabes
 
-        cy.get(".example>a").invoke('removeAttr', 'target').click() //click to the tabe
+
+        cy.get("a[href='/windows/new']").invoke('removeAttr', 'target').click() //click to the tabe
 
         cy.url().should('include',"https://the-internet.herokuapp.com/windows/new") //confrim the tabe
     //operation Perform
 
-        cy.go("back") //cypress Comment Back to the home page 
+        //cy.go("back") //cypress Comment Back to the home page 
     })
 
     //Approch 2

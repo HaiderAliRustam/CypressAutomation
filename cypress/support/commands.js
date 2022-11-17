@@ -44,7 +44,7 @@ Cypress.Commands.add('clickLable',(abc)=>{
 Cypress.Commands.add('loginapp',(username, password)=>{
    cy.get("input[placeholder='Username']").type(username);
    cy.get("input[placeholder='Password']").type(password)
-   cy.get("button[type='submit']").click()
+   cy.get('button[type="submit"]').click()
 })
 
 
@@ -53,7 +53,7 @@ Cypress.Commands.add('loginapp',(username, password)=>{
 Cypress.Commands.add('getIframe ',(iframe)=>
 {
    return cy.get(iframe)
-   .its('0.contentDocument.body')
+   .its('0.contentDocument.body' )
    .should('be.visible')
    .then(cy.wrap);
 }
