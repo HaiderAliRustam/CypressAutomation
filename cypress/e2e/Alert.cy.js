@@ -1,5 +1,7 @@
 describe("Alert Window " , ()=>{
 //1) Javascript Alert: It will have some text and an ‘OK’ button
+//haider
+
 it.skip("Javascript Alert: It will have some text and an ‘OK’ button",()=>
 {
     cy.visit("https://the-internet.herokuapp.com/javascript_alerts")
