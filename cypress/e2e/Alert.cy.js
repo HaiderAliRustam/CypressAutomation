@@ -86,6 +86,7 @@ it("Authenticated Alert",()=>
         }
     });
     cy.get("div[class='example'] p").should('have.contain',"Congratulations")
+    //jb
 
 })
 
